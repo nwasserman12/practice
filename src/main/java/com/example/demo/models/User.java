@@ -16,9 +16,6 @@ public class User extends AbstractEntity{
     @NotNull
     private String dateOfBirth;
 
-    @NotNull
-    @Size(max=15, message= "Username must be under 15 characters.")
-    private String username;
 
     public String getFirstName() {
         return firstName;
@@ -44,14 +41,6 @@ public class User extends AbstractEntity{
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getUsername(){
-        return username;
     }
 
     public String getVerifyPassword() {
