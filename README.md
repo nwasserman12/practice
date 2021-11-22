@@ -1,3 +1,3 @@
 # practice
 
-place where I can practice some code
+My personal sandbox 
