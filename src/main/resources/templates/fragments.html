@@ -8,11 +8,18 @@
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
-<header th:fragment="header">
-    <h1 th:text="${title}">My Sandbox</h1>
-    <ul class="nav">
-
-    </ul>
-</header>
+<nav th:fragment="nav" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #32502E;">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-paw" style="-webkit-text-stroke: 0.5px white; color: crimson;"></i><span style="font-family: 'Lobster', cursive; color: tan; letter-spacing: 2px; font-size: 20px;"> My Sandbox</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class ="nav-link" style="font-family: 'Lobster', cursive; font-size: 16px; color: white; letter-spacing: 2px;">Profile</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 </body>
 </html>
