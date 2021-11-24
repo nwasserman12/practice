@@ -21,7 +21,7 @@ public class RegisterFormDTO extends LoginFormDTO {
     private String lastName;
 
     @NotNull
-    @DateTimeFormat(pattern = "MM-DD-yyyy")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dateOfBirth;
 
     private String verifyPassword;
